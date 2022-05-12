@@ -1,0 +1,48 @@
+/*  Welcome to the style stuff */
+/* General rules */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+}
+.button{
+    padding: 5px;
+    background-color: grey;
+
+}
+
+/*     Header rules */
+.t-header{
+    background-color: black;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+
+}
+.t-header .button{
+    color: whitesmoke;
+    margin: 5px;
+    border-radius: 5px;
+}
+.t-header i{
+    color: white;
+
+}
+
+.t-header .container i{
+    align-self: center;
+    margin-right: 3px;    
+}
+
+/* main rules */
+
