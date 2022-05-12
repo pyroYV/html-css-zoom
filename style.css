@@ -8,14 +8,21 @@
 
 a{
     text-decoration: none;
+    color: whitesmoke;
 }
-
+i{
+    color: whitesmoke;
+}
 .container{
     display: flex;
 }
 .button{
     padding: 5px;
     background-color: grey;
+}
+
+img{
+    width: 100%;
 
 }
 
@@ -24,9 +31,8 @@ a{
     background-color: black;
     justify-content: flex-end;
     align-items: flex-start;
-    height: 15vh;
+    height: 10vh;
     width: 100%;
-    position: fixed;
 
 }
 .t-header .button{
@@ -45,4 +51,49 @@ a{
 }
 
 /* main rules */
+main{
+    height: 75vh;
+    overflow:scroll;
+    overflow-x: hidden;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: black;
+    padding: 5px 10px;
+}
 
+.picture{
+    position: relative;
+}
+
+.username{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(red, green, blue, alpha);
+    padding: 3px;
+}
+
+/* footer rules */
+.bottom{
+    background-color: grey;
+    height: 15vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: smaller;
+    color: whitesmoke;
+    padding-top: 20px;
+
+}
+
+
+.f-left{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
