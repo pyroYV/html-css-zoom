@@ -23,7 +23,6 @@ i{
 
 img{
     width: 100%;
-
 }
 
 /*     Header rules */
@@ -31,7 +30,7 @@ img{
     background-color: black;
     justify-content: flex-end;
     align-items: flex-start;
-    height: 10vh;
+    height: 70px;
     width: 100%;
 
 }
@@ -52,38 +51,37 @@ img{
 
 /* main rules */
 main{
-    height: 75vh;
+    height: calc(100vh - 70px - 80px);
     overflow:scroll;
     overflow-x: hidden;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     padding: 5px 10px;
 }
 
 .picture{
     position: relative;
+    margin: 10px;
 }
 
 .username{
     position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(red, green, blue, alpha);
-    padding: 3px;
+    bottom: 5%;
+    left: 5%;
+    background-color: rgba(34, 34, 34, 9);
+    padding: 5px;
+    color: white;
 }
 
 /* footer rules */
 .bottom{
     background-color: grey;
-    height: 15vh;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    height: 80px;
     width: 100%;
     justify-content: space-between;
     padding: 5px;
-    font-size: smaller;
     color: whitesmoke;
     padding-top: 20px;
 
@@ -91,9 +89,18 @@ main{
 
 
 .f-left{
-    width: 10%;
-    height: 100%;
-    display: flex;
+    flex-shrink: 0;
     align-items: center;
-    text-align: center;
+    justify-content: space-evenly;
+    
 }
+
+.icon-container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
